@@ -1,4 +1,4 @@
-# los_aventureros
+# los_aventureros 🐜
 Integrantes:
 - Adriana Morales
 - Isaac Arboleda
