@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.container .items{
+    display: grid;
+    grid-template-columns: max-content;
+}
