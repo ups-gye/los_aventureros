@@ -1,0 +1,103 @@
+*{
+    margin: 0%;
+}
+
+
+.principal{
+    display: grid;
+    grid-template-rows: 10% 10% 60% 20% ;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"  ;
+    min-height:100vh ;
+    gap: 0%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+    background-color: #053f5c;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #429EBD;
+}
+
+.nav-bar {
+    list-style: none;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+
+.nav-bar li { 
+    display: inline;
+}
+
+.nav-bar a {
+    display: flex;
+    
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+
+
+.nav-bar a img {
+    width: 30px; 
+    height: 30px; 
+    
+}
+
+
+.main{
+    grid-area: main;
+    
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #F7AD19;
+}
+
+.footer-contenedor{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "izquierda derecha";
+    height: 20vh;
+}
+
+.izquierda{
+    
+    grid-area: izquierda;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 2%;
+
+}
+
+.derecha{
+    grid-area: derecha;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 2%;
+   
+}
+
+.img{
+    height: 50%;
+    width: 30%;
+}
+.imgCarrera{
+    height: 80%;
+    width: 25%;
+}
