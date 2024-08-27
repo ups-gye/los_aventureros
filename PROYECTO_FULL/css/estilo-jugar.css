@@ -8,17 +8,29 @@
 
 .container {
     display: grid;
-
-    grid-template-areas: "header header" "menu menu"  " content content" "footer footer";
-    grid-template-rows: 50px 500px 320px 200px;
-    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header1 header1" "header header" "menu menu"  " content content" "footer footer";
+    grid-template-rows: 50px 50px 540px 92px;
+    grid-gap: 1px;
     height: 100vh;
 }
 
 .item {
     background-color: rgb(224, 228, 235);
     padding: 50px;
-   border: 1px solid lightgray;
+   
+}
+
+.header1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #171810;
+    grid-area: header1;
+    text-align: center;
+    
+
+
 }
 
 .header {
@@ -31,13 +43,16 @@
     font-weight: bolder;
     text-align: center;
     padding: 20px;
-    position: fixed;
     width: 100%;
     height: 50px;
     z-index: 4;
     
  
 }
+.content{
+    background-color: #429EBD;
+}
+
 
 nav{
     position: relative;
@@ -105,7 +120,7 @@ nav a:nth-child(5):hover~span{
 }
 
 .fortune-wheel, .wheel{
-
+    
     position: relative;
     display: flex;
     align-items: center;
