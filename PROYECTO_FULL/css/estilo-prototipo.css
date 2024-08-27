@@ -34,6 +34,8 @@
     position: fixed;
     width: 100%;
     height: 50px;
+   
+    
  
 }
 
@@ -120,6 +122,7 @@ nav a:nth-child(5):hover~span{
 }
 
 .footer {
+    
     grid-area: footer;
     color: aliceblue;
     font-weight: bolder;
