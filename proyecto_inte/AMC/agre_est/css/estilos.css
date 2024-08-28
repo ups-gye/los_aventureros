@@ -2,12 +2,12 @@
     margin: 0%;
 }
 
-
 .principal{
+    margin: 0%;
     display: grid;
-    grid-template-rows: 10% 10% 70% 10% ;
+    grid-template-rows: auto auto 1fr auto ;
     grid-template-areas: "header header" "nav nav" "main main" "footer footer"  ;
-    min-height: 80vh ;
+    min-height: 100dvh ;
     /* gap: 0%; */
 }
 
@@ -32,7 +32,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    gap: 4%;
 
 }
 
@@ -94,7 +94,7 @@ nav {
     padding: 2%;
     border: 2px solid black;
     /* margin: 2px; */
-    height: 50vh;
+    height: 50dvh;
     /* width: 40%; */
 
 }
@@ -105,7 +105,7 @@ nav {
     /* align-items: center; */
     /* justify-content: left; */
     padding: 2%;
-    height: 50vh;
+    height: 50dvh;
     border: 2px solid black;
     /* width: 0%; */
 
@@ -126,7 +126,7 @@ th, td{
 .footer{
     grid-area: footer;
     background-color: #F7AD19;
-    /* height: 10vh; */
+    /* height: 10dvh; */
 
 }
 
@@ -159,7 +159,7 @@ th, td{
 
 .img{
     height: 40%;
-    width: 30%;
+    width: 25%;
 }
 .imgCarrera{
     height: 70%;
