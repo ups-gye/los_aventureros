@@ -3,61 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Application</title>
+    <link rel="stylesheet" type="text/css" href="/PROYECTO_FULL/css/estilos1.css">
+    <title>Proyecto - Los Aventureros</title>
 </head>
 <body>
-
-    <header id="header">
-        <nav>
-            <div class="container">
-                <div class="text-center">
-                    <a href="/" class="nav-brand text-dark">User Managment System</a>
+    <section class="principal">
+        <header class="header">
+            <h1>QUIEN QUIERE SER EL MEJOR DE LA CLASE?</h1>
+        </header>
+        
+            <nav >
+                <ul class="nav-bar">
+                    <li><a href="#inicio"><img class="home"  src="/PROYECTO_FULL/img/home.png">Inicio</a></li>
+                    <li><a href="/PROYECTO_FULL/html/prototipo.html"><img src="/PROYECTO_FULL/img/estudiante.png">Estudiantes</a></li>
+                    <li><a href="/PROYECTO_FULL/html/login_index.html"><img src="/PROYECTO_FULL/img/profesor.png">Docentes</a></li>
+                </ul>
+            </nav>
+        
+        <main class="main">
+            <h1></h1>
+        </main>
+        <footer class="footer"> 
+            <div class="footer-contenedor">
+                <div class="izquierda" >
+                    <img  class="img" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Logo_Universidad_Polit%C3%A9cnica_Salesiana_del_Ecuador.png">
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main id="site-main">
-        <div class="container">
-            <div class="box-nav d-flex-justify-between">
-                <a href="/add-user" class="border-shadow">
-                    <span class="text-gradient">New User</span>
-                </a>
-            </div>
-            <form action="/" method="post">
-                <table class="table">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>@Email</th>
-                            <th>Gender</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Username</td>
-                            <td>example@gmail.com</td>
-                            <td>male</td>
-                            <td>female</td>
-                            <td>Active</td>
-                            <td>
-                                <a href="#" class="btn border-shadow update">
-                                    <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
-                                </a>
-                            </td>
-                            <td>
-                                <a href="#" class="btn border-shadow delete">
-                                    <span class="text-gradient"><i class="fas fa-times"></i></span>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </form>
-        </div>
-    </main>
+                <div class="derecha">
+                    <img class="imgCarrera" src="/PROYECTO_FULL/img/computacion1.png" >
+                </div>
+            </div>  
+        </footer>
+    </section>
+    
 </body>
 </html>
