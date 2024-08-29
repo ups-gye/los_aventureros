@@ -61,3 +61,14 @@ function agregarPregunta() {
     document.getElementById("op3").value = '';
     document.getElementById("op4").value = '';
 }
+
+function eliminarUltimaPregunta() {
+    var table = document.getElementById('table');
+    var numRows = table.rows.length;
+
+    // Eliminar la última pregunta (2 filas asociadas: pregunta y opciones)
+    if (numRows > 0) {
+        table.deleteRow(numRows - 1); // Eliminar la fila de opciones
+        table.deleteRow(numRows - 2); // Eliminar la fila de la pregunta
+    }
+}
