@@ -13,7 +13,17 @@ function spinWheel(evt){
 
 const showPopup = document.querySelector('.spin');
 const showContainer = document.querySelector('.popup-container');
+const closeBtn = document.querySelector('.close-btn');
 
 showPopup.onclick = () => {
-    showContainer.classList.add('active');
+    setTimeout(() => {
+        showContainer.classList.add('active');
+    },2000);
 };
+
+closeBtn.onclick = () => {
+    console.log('Botón de cerrar clicado');
+    showContainer.classList.remove('active');
+};
+
+
