@@ -6,6 +6,12 @@ function agregarPregunta() {
     var opcion3 = document.getElementById("op3").value;
     var opcion4 = document.getElementById("op4").value;
 
+     // Validar que los campos no estén vacíos
+     if (pregunta === '' || opcion1 === '' || opcion2 === '' || opcion3 === '' || opcion4 === '') {
+        alert("Por favor, completa todos los campos antes de agregar la pregunta.");
+        return;
+    }
+
     // Crear una nueva fila para la pregunta
     var tr = document.createElement('tr');
     tr.className = "pregunta-row"; // Añadir clase para margen
@@ -14,7 +20,9 @@ function agregarPregunta() {
     var tdPregunta = document.createElement('td');
     tdPregunta.colSpan = 2;
     tdPregunta.textContent = pregunta;
-    tdPregunta.style.textAlign = "center"; // Centrar el texto
+    tdPregunta.style.textAlign = "center"; // Centrar el 
+    tdPregunta.style.backgroundColor = "#ADD8E6"; // Color de fondo
+    
     tr.appendChild(tdPregunta);
 
     // Añadir la fila a la tabla principal
