@@ -49,7 +49,7 @@ ul li {
     font-weight: bold; 
     color: #555;
     text-shadow: none;
-    /*animation: anim 1s infinite linear;*/
+    animation: anim 1s infinite linear;
 
 }
 
