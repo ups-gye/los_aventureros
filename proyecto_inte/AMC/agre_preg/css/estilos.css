@@ -42,7 +42,6 @@ nav {
 
 .nav-bar a {
     display: flex;
-    
     font-weight: bold;
     color: black;
     border: 2px solid black;
@@ -55,7 +54,8 @@ nav {
 
 .nav-bar a img {
     width: 30px; 
-    height: 30px; 
+    height: 30px;
+    margin-right: 5px;
     
 }
 
@@ -69,8 +69,8 @@ nav {
 .main-title{
     display: flex;
     justify-content: center;
-    padding: -2%;
-    margin: 10px;
+    /* padding: -2%; */
+    margin: 10px 0;
 }
 
 .main-contenedor{
@@ -78,6 +78,7 @@ nav {
     grid-template-rows: auto auto;
     grid-template-areas: "dat-preg tab-preg";
     padding: 2%;
+    grid-gap: 20px;
     /* height: 51.9vh; */
     /* background: #F7AD19; */
     /* border: 1px solid black; */
@@ -92,7 +93,7 @@ nav {
     /* justify-content: left; */
     padding: 2%;
     border: 2px solid black;
-    margin: 2px;
+    /* margin: 2px; */
     height: 50dvh;
     /* width: 40%; */
 
@@ -104,10 +105,17 @@ nav {
     /* align-items: center; */
     /* justify-content: left; */
     padding: 2%;
-    height: 50vh;
+    height: 52dvh;
     border: 2px solid black;
+    overflow-y: scroll;
     /* width: 0%; */
 
+}
+
+.pregunta-row {
+    margin-bottom: 15px; /* Espacio entre las preguntas */
+    border-bottom: 1px solid #ccc; /* Borde inferior para separar preguntas */
+    padding-bottom: 10px; /* Espacio interno debajo de cada pregunta */
 }
 
 table{
@@ -119,7 +127,7 @@ table{
 
 th, td{
     border: 2px solid #053f5c;
-    width: 30%;
+    /* width: 30%; */
     padding: 10px;
 }
 

@@ -1,44 +1,63 @@
-function agregar_preg(){
+function agregarPregunta() {
     var table = document.getElementById('table');
-    var preguntaInput = document.getElementById('pregunta');
-    var op1Input = document.getElementById('op1');
-    var op2Input = document.getElementById('op2');
-    var op3Input = document.getElementById('op3');
-    var op4Input = document.getElementById('op4');
+    var pregunta = document.getElementById("pregunta").value;
+    var opcion1 = document.getElementById("op1").value;
+    var opcion2 = document.getElementById("op2").value;
+    var opcion3 = document.getElementById("op3").value;
+    var opcion4 = document.getElementById("op4").value;
 
+    // Crear una nueva fila para la pregunta
     var tr = document.createElement('tr');
-    var tr1 = document.createElement('tr');
-    var tr2 = document.createElement('tr');
-    var tr3 = document.createElement('tr');
-    var tr4 = document.createElement('tr');
+    tr.className = "pregunta-row"; // Añadir clase para margen
 
-    var td1 = tr.appendChild(document.createElement('td'));
-    var td2 = tr1.appendChild(document.createElement('td'));
-    var td3 = tr2.appendChild(document.createElement('td'));
-    var td4 = tr3.appendChild(document.createElement('td'));
-    var td5 = tr4.appendChild(document.createElement('td'));
+    // Crear la celda de la pregunta
+    var tdPregunta = document.createElement('td');
+    tdPregunta.colSpan = 2;
+    tdPregunta.textContent = pregunta;
+    tdPregunta.style.textAlign = "center"; // Centrar el texto
+    tr.appendChild(tdPregunta);
 
-    // Crea nodos de texto con los valores de los inputs
-    var preguntaText = document.createTextNode(preguntaInput.value);
-    var op1Text = document.createTextNode(op1Input.value);
-    var op2Text = document.createTextNode(op2Input.value);
-    var op3Text = document.createTextNode(op3Input.value);
-    var op4Text = document.createTextNode(op4Input.value);
-
-    // Añade los nodos de texto a las celdas correspondientes
-    td1.appendChild(preguntaText);
-    td2.appendChild(op1Text);
-    td3.appendChild(op2Text);
-    td4.appendChild(op3Text);
-    td5.appendChild(op4Text);
-
-    // Añade la fila a la tabla
+    // Añadir la fila a la tabla principal
     table.appendChild(tr);
 
-    // Limpia los campos de entrada después de agregar la pregunta
-    preguntaInput.value = '';
-    op1Input.value = '';
-    op2Input.value = '';
-    op3Input.value = '';
-    op4Input.value = '';
+    // Crear una nueva fila para las opciones
+    var trOpciones = document.createElement('tr');
+    trOpciones.className = "pregunta-row"; // Añadir clase para margen
+
+    // Crear una celda para anidar la tabla de opciones
+    var tdOpciones = document.createElement('td');
+    tdOpciones.colSpan = 2;
+
+    // Crear la tabla de opciones
+    var tablaOpciones = document.createElement('table');
+    tablaOpciones.style.width = "100%";
+    tablaOpciones.style.textAlign = "center";
+    tablaOpciones.border = "1";
+
+    // Crear las filas de opciones
+    var opcion1Row = tablaOpciones.insertRow();
+    opcion1Row.insertCell(0).textContent = "1." + opcion1;
+    
+    var opcion2Row = tablaOpciones.insertRow();
+    opcion2Row.insertCell(0).textContent = "2." + opcion2;
+    
+    var opcion3Row = tablaOpciones.insertRow();
+    opcion3Row.insertCell(0).textContent = "3." + opcion3;
+    
+    var opcion4Row = tablaOpciones.insertRow();
+    opcion4Row.insertCell(0).textContent = "4." + opcion4;
+
+    // Añadir la tabla de opciones a la celda
+    tdOpciones.appendChild(tablaOpciones);
+    trOpciones.appendChild(tdOpciones);
+
+    // Añadir la fila de opciones a la tabla principal
+    table.appendChild(trOpciones);
+
+    // Limpiar los campos de entrada
+    document.getElementById("pregunta").value = '';
+    document.getElementById("op1").value = '';
+    document.getElementById("op2").value = '';
+    document.getElementById("op3").value = '';
+    document.getElementById("op4").value = '';
 }
