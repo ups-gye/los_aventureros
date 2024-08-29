@@ -22,7 +22,7 @@ function agregarPregunta() {
     tdPregunta.textContent = pregunta;
     tdPregunta.style.textAlign = "center"; // Centrar el 
     tdPregunta.style.backgroundColor = "#ADD8E6"; // Color de fondo
-    
+
     tr.appendChild(tdPregunta);
 
     // Añadir la fila a la tabla principal
@@ -74,9 +74,11 @@ function eliminarUltimaPregunta() {
     var table = document.getElementById('table');
     var numRows = table.rows.length;
 
-    // Eliminar la última pregunta (2 filas asociadas: pregunta y opciones)
-    if (numRows > 0) {
+    // Verificar si hay suficientes filas para eliminar (dos filas por pregunta)
+    if (numRows >= 2) {
         table.deleteRow(numRows - 1); // Eliminar la fila de opciones
         table.deleteRow(numRows - 2); // Eliminar la fila de la pregunta
+    } else {
+        alert("No hay preguntas para eliminar.");
     }
 }

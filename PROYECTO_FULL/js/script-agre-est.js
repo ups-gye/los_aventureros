@@ -4,6 +4,12 @@ function agregar_est(){
     var apellido = document.getElementById("apellido")
     var curso = document.getElementById("curso")
 
+      // Validar que los campos no estén vacíos
+      if (nombre.value === '' || apellido.value === '' || curso.value === '') {
+        alert("Por favor, completa todos los campos antes de agregar el estudiante.");
+        return;
+    }
+
     var tr = document.createElement('tr')
 
     var td1 = tr.appendChild(document.createElement('td'))
