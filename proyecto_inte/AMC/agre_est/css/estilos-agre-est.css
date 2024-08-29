@@ -1,0 +1,167 @@
+*{
+    margin: 0%;
+}
+
+.principal{
+    /* margin: 0%; */
+    display: grid;
+    grid-template-rows: auto auto 1fr auto ;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"  ;
+    min-height: 100dvh ;
+    /* gap: 0%; */
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+    background-color: #053f5c;
+
+}
+
+nav {
+    grid-area: nav;
+    background-color: #429EBD;
+
+}
+
+.nav-bar {
+    list-style: none;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+
+}
+
+.nav-bar li { 
+    display: inline;
+}
+
+.nav-bar a {
+    display: flex;
+    
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+
+
+.nav-bar a img {
+    width: 30px; 
+    height: 30px; 
+    
+}
+
+
+.main{
+    grid-area: main;
+    padding: 1%;
+    
+}
+
+.main-title{
+    display: flex;
+    justify-content: center;
+    padding: -2%;
+    margin: 10px;
+}
+
+.main-contenedor{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: "dat-est tab-est";
+    padding: 2%;
+    
+}
+
+.dat-est{
+    grid-area: dat-est;
+    padding: 2%;
+    border: 1px solid black;
+    margin: 2px;
+    height: 50.5dvh;
+
+}
+
+.tab-est{
+    grid-area: tab-est;
+    margin: 2px;
+    padding: 2%;
+    height: 50dvh;
+    border: 1px solid black;
+    overflow-y: auto;
+    position: relative;
+
+}
+
+table{
+    border: 2px solid #053f5c;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+th, td{
+    border: 2px solid #053f5c;
+    width: 30%;
+    padding: 10px;
+}
+
+th{
+    position: sticky;
+    top: 0;
+    background-color: #429EBD;
+    z-index: 1;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #F7AD19;
+}
+
+.footer-contenedor{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "izquierda derecha";
+}
+
+.izquierda{
+    
+    grid-area: izquierda;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 2%;
+
+}
+
+.derecha{
+    grid-area: derecha;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 2%;
+   
+}
+
+.img{
+    height: 40%;
+    width: 25%;
+}
+.imgCarrera{
+    height: 70%;
+    width: 25%;
+}
+
+p{
+    font-size: large;
+    margin-block: 5%;
+}
