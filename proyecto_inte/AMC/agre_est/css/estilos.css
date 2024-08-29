@@ -3,7 +3,7 @@
 }
 
 .principal{
-    margin: 0%;
+    /* margin: 0%; */
     display: grid;
     grid-template-rows: auto auto 1fr auto ;
     grid-template-areas: "header header" "nav nav" "main main" "footer footer"  ;
@@ -63,7 +63,6 @@ nav {
 .main{
     grid-area: main;
     padding: 1%;
-    /* margin: 10px; */
     
 }
 
@@ -76,38 +75,29 @@ nav {
 
 .main-contenedor{
     display: grid;
-    grid-template-rows: 50% 70%;
+    grid-template-rows: auto auto;
     grid-template-areas: "dat-est tab-est";
     padding: 2%;
-    /* height: 51.9vh; */
-    /* background: #F7AD19; */
-    /* border: 1px solid black; */
-
     
 }
 
 .dat-est{
     grid-area: dat-est;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: left; */
     padding: 2%;
-    border: 2px solid black;
-    /* margin: 2px; */
-    height: 50dvh;
-    /* width: 40%; */
+    border: 1px solid black;
+    margin: 2px;
+    height: 50.5dvh;
 
 }
 
 .tab-est{
     grid-area: tab-est;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: left; */
+    margin: 2px;
     padding: 2%;
     height: 50dvh;
-    border: 2px solid black;
-    /* width: 0%; */
+    border: 1px solid black;
+    overflow-y: auto;
+    position: relative;
 
 }
 
@@ -116,26 +106,31 @@ table{
     border-collapse: collapse;
     width: 100%;
     text-align: center;
+    position: relative;
 }
 
 th, td{
     border: 2px solid #053f5c;
     width: 30%;
+    padding: 10px;
+}
+
+th{
+    position: sticky;
+    top: 0;
+    background-color: #429EBD;
+    z-index: 1;
 }
 
 .footer{
     grid-area: footer;
     background-color: #F7AD19;
-    /* height: 10dvh; */
-
 }
 
 .footer-contenedor{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "izquierda derecha";
-    /* padding-top: 10%; */
-    /* height: 10vh; */
 }
 
 .izquierda{
@@ -170,7 +165,3 @@ p{
     font-size: large;
     margin-block: 5%;
 }
-
-/* input{
-    width: 10%;
-} */

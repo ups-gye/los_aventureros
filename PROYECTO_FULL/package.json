@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "express": "^4.19.2",
-    "moongose": "^1.0.0"
+    "moongose": "^1.0.0",
+    "nodemon": "^3.1.4"
   }
 }

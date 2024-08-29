@@ -3,68 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>...</title>
+    <title>Agregar Preguntas</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="icon" href="icons/comment-add-solid-24.png" type="image/x-icon">
 </head>
 <body>
-    <!-- <section class="principal">
-        
-    </section> -->
-    <header class="header">
-        <h1>QUIEN QUIERE SER EL MEJOR DE LA CLASE?</h1>
-    </header>
-
-    <nav >
-        <ul class="nav-bar">
-            <li><a href="#inicio"><img class="home"  src="img/home.png">Inicio</a></li>
-            <li><a href="#estudiantes"><img src="img/estudiante.png">Estudiantes</a></li>
-            <li><a href="#docentes"><img src="img/profesor.png">Docentes</a></li>
-        </ul>
-    </nav>
-
-    <main class="main">
-        <div class="main-title">
-            <h2>Ingrese la pregunta y sus opciones</h2>
-        </div>
-        <div class="main-contenedor">
-            <div class="dat-preg">
-                <p>Pregunta</p>
-                <input type="text" name="pregunta" id="pegunta">
-                <p>Opcion 1 (Respuesta Correcta)</p>
-                <input type="text" name="op1" id="op1">
-                <p>Opcion 2</p>
-                <input type="text" name="op2" id="op2">
-                <p>Opcion 3</p>
-                <input type="text" name="op3" id="op3">
-                <p>Opcion 4</p>
-                <input type="text" name="op4" id="op4">
-                <button type="button">Añadir</button>
-                <button type="button">Eliminar</button>
-
+    <section class="principal">
+        <header class="header">
+            <h1>QUIEN QUIERE SER EL MEJOR DE LA CLASE?</h1>
+        </header>
+    
+        <nav >
+            <ul class="nav-bar">
+                <li><a href="#inicio"><img class="home"  src="img/home.png">Inicio</a></li>
+                <li><a href="#estudiantes"><img src="img/estudiante.png">Estudiantes</a></li>
+                <li><a href="#docentes"><img src="img/profesor.png">Docentes</a></li>
+            </ul>
+        </nav>
+    
+        <main class="main">
+            <div class="main-title">
+                <h2>Ingrese la pregunta y sus opciones</h2>
             </div>
-            <div class="tab-preg">
-                <p>Pregunta</p>
-                <p>Opcion</p>
-                <p>1. </p>
-                <p>2. </p>
-                <p>3. </p>
-                <p>4. </p>
+            <div class="main-contenedor">
+                <div class="dat-preg">
+                    <p>Pregunta</p>
+                    <input type="text" name="pregunta" id="pegunta">
+                    <p>Opcion 1 (Respuesta Correcta)</p>
+                    <input type="text" name="op1" id="op1">
+                    <p>Opcion 2</p>
+                    <input type="text" name="op2" id="op2">
+                    <p>Opcion 3</p>
+                    <input type="text" name="op3" id="op3">
+                    <p>Opcion 4</p>
+                    <input type="text" name="op4" id="op4">
+                    <button type="button">Añadir</button>
+                    <button type="button">Eliminar</button>
+    
+                </div>
+                <div class="tab-preg">
+                    <table class="question-table">
+                        <tr>
+                            <th colspan="2">Pregunta: ¿Cuál es tu color favorito?</th>
+                        </tr>
+                        <tr>
+                            <td><id="option1">1</td>
+                            <td><label for="option1">Rojo</label></td>
+                        </tr>
+                        <tr>
+                            <td><id="option2">2</td>
+                            <td><label for="option2">Azul</label></td>
+                        </tr>
+                        <tr>
+                            <td><id="option3">3</td>
+                            <td><label for="option3">Verde</label></td>
+                        </tr>
+                        <tr>
+                            <td><id="option4">4</td>
+                            <td><label for="option4">Amarillo</label></td>
+                        </tr>
+                    </table>
+                    <!-- <p>Pregunta</p>
+                    <p>Opcion</p>
+                    <p>1. </p>
+                    <p>2. </p>
+                    <p>3. </p>
+                    <p>4. </p> -->
+                </div>
             </div>
-        </div>
-    </main>       
-
-    <footer class="footer"> 
-        <div class="footer-contenedor">
-            <div class="izquierda" >
-                <img  class="img" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Logo_Universidad_Polit%C3%A9cnica_Salesiana_del_Ecuador.png">
+        </main>       
+    
+        <footer class="footer"> 
+            <div class="footer-contenedor">
+                <div class="izquierda" >
+                    <img  class="img" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Logo_Universidad_Polit%C3%A9cnica_Salesiana_del_Ecuador.png">
+                </div>
+                <div class="derecha">
+                    <img class="imgCarrera" src="img/computacion1.png" >
+                </div>
             </div>
-            <div class="derecha">
-                <img class="imgCarrera" src="img/computacion1.png" >
-            </div>
-        </div>
-        
-        
-    </footer>    
+        </footer>
+    </section>
 </body>
 </html>
