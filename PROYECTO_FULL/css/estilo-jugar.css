@@ -162,10 +162,6 @@ ul li:nth-child(8){
     
     
 }
-.popup-container.closing .popup-box {
-    transform: scale(0);
-    opacity: 0;
-}
 
 
 
