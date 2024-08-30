@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Preguntas</title>
+    <link rel="stylesheet" type="text/css" href="/PROYECTO_FULL/css/estilos-agre-preg.css">
+    <script type="text/Javascript" src="/PROYECTO_FULL/js/script_agre_preg.js"></script>
+    <link rel="icon" href="/PROYECTO_FULL/icons/comment-add-solid-24.png" type="image/x-icon">
+</head>
+<body>
+    <section class="principal">
+        <header class="header">
+            <h1>QUIEN QUIERE SER EL MEJOR DE LA CLASE?</h1>
+        </header>
+    
+        <nav >
+            <ul class="nav-bar">
+                <li><a href="#inicio"><img class="home"  src="/PROYECTO_FULL/img/home.png">Inicio</a></li>
+                <li><a href="#estudiantes"><img src="/PROYECTO_FULL/img/estudiante.png">Estudiantes</a></li>
+                <li><a href="#docentes"><img src="/PROYECTO_FULL/img/profesor.png">Docentes</a></li>
+            </ul>
+        </nav>
+    
+        <main class="main">
+            <div class="main-title">
+                <h2>Ingrese la pregunta y sus opciones</h2>
+            </div>
+            <div class="main-contenedor">
+                <div class="dat-preg">
+                    <p>Pregunta</p>
+                    <input type="text" name="pregunta" id="pregunta">
+                    <p>Opcion 1 (Respuesta Correcta)</p>
+                    <input type="text" name="op1" id="op1">
+                    <p>Opcion 2</p>
+                    <input type="text" name="op2" id="op2">
+                    <p>Opcion 3</p>
+                    <input type="text" name="op3" id="op3">
+                    <p>Opcion 4</p>
+                    <input type="text" name="op4" id="op4">
+                    <button class="item-button" onclick="agregarPregunta()">Añadir</button>
+                    <button class="item-button" onclick="eliminarUltimaPregunta()">Eliminar</button>
+                </div>
+                <div class="tab-preg" id="tab-preg">
+                    <p>Preguntas</p>
+                    <table id="table">
+                    </table>
+                </div>
+            </div>
+        </main>       
+    
+        <footer class="footer"> 
+            <div class="footer-contenedor">
+                <div class="izquierda" >
+                    <img  class="img" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Logo_Universidad_Polit%C3%A9cnica_Salesiana_del_Ecuador.png">
+                </div>
+                <div class="derecha">
+                    <img class="imgCarrera" src="/PROYECTO_FULL/img/computacion1.png" >
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
