@@ -6,7 +6,7 @@ const session =  require('express-session')
 
 //Initiliazations
 const app = express();
-require('./databse')
+require('./database')
 
 //Settings
 app.set('port', process.env.PORT || 3000)
