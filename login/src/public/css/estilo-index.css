@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    background-color: #f3f4f6; /* Fondo gris claro */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/* Header */
+header {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@keyframes goldenAnimation {
+    0% { color: #ffffff; }
+    100% { color: #ffd700; }
+}
+
+header span {
+    display: inline-block;
+    animation: goldenAnimation 1s ease-in-out infinite alternate;
+}
+
+/* Footer */
+footer {
+    background-color: #003366; /* Azul marino */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-body h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.card-body a {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px 0;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.card-body a:hover {
+    background-color: #0056b3;
+}
+
+.card-body a span {
+    margin-right: 8px;
+}
+
+.fa-lock {
+    color: #007bff;
+    margin-right: 10px;
+}

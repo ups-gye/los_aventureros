@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+  
+  .header {
+    background-color: #171810;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header ul li {
+    margin: 0 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    text-shadow: none;
+    animation: anim 1s infinite linear;
+  }
+  
+  @keyframes anim {
+    0% {
+      color: #555;
+      text-shadow: none;
+    }
+    85% {
+      color: #ffea00;
+      text-shadow: 0 0 1vw #ffc400, 0 0 3vw #f44336;
+    }
+    100% {
+      color: #555;
+      text-shadow: none;
+    }
+  }
+  
+  ul li:nth-child(1) {
+    animation-delay: 0.4s;
+  }
+  ul li:nth-child(2) {
+    animation-delay: 0.8s;
+  }
+  ul li:nth-child(3) {
+    animation-delay: 1.2s;
+  }
+  ul li:nth-child(4) {
+    animation-delay: 1.6s;
+  }
+  ul li:nth-child(5) {
+    animation-delay: 2s;
+  }
+  ul li:nth-child(6) {
+    animation-delay: 2.4s;
+  }
+  ul li:nth-child(7) {
+    animation-delay: 2.8s;
+  }
+  ul li:nth-child(8) {
+    animation-delay: 3.2s;
+  }
+  
+  .form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .form-register {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+  }
+  
+  .form-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  button[type="submit"], a.submit-btn {
+    display: block;
+    padding: 12px;
+    background-color: #2aace6;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  button[type="submit"]:hover, a.submit-btn:hover {
+    background-color: #1a8db3;
+    transform: translateY(-3px);
+  }
+  
+  button[type="submit"]:active, a.submit-btn:active {
+    background-color: #0a7b99;
+    transform: translateY(1px);
+  }
+  
+  .footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+  

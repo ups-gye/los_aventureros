@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo-profesor.css">
+    <title>Dashboard Profesor</title>
+</head>
+
+<body>
+    <header class="header">
+        <ul>
+            <li>¿QUIEN</li>
+            <li>QUIERE</li>
+            <li>SER</li>
+            <li>EL</li>
+            <li>MEJOR</li>
+            <li>DE</li>
+            <li>LA</li>
+            <li>CLASE?</li>
+        </ul>
+    </header>
+
+    <div class="form-section">
+        <div class="form-register">
+            <h1 class="form-title">Bienvenido Profesor <%= user.local.username %></h1>
+            <nav>
+                <a href="/profesor/preguntas" class="submit-btn">Gestionar Preguntas</a>
+                <a href="/profesor/puntajes" class="submit-btn">Ver Puntajes</a>
+                <a href="/logout" class="submit-btn">Cerrar sesión</a>
+            </nav>
+        </div>
+    </div>
+
+    <footer class="footer">
+        © Los Aventureros
+    </footer>
+</body>
+
+</html>
