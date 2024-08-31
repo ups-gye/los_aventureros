@@ -52,6 +52,8 @@ body {
     }
 }
 
+
+
 .header1 ul li:nth-child(1) {
     animation-delay: .4s;
 }

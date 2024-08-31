@@ -6,6 +6,7 @@ let preguntaIndex; // Variable global para almacenar el índice de la pregunta a
 // Usar los puntos que el servidor envió al cargar la página
 let puntos = parseInt(document.getElementById("puntos").innerText.split(": ")[1]);
 
+
 button.addEventListener("click", spinWheel);
 
 const preguntas = [
@@ -38,7 +39,7 @@ function mostrarPregunta(index) {
   
   // Actualiza el contenido del popup
   popupBox.innerHTML = `
-    <h1>Pregunta ${index + 1}</h1>
+    <h1>Pregunta </h1>
     <p>${preguntaData.pregunta}</p>
     <ul>
       ${preguntaData.respuestas.map((respuesta, i) =>
@@ -108,3 +109,5 @@ function cerrarPopup() {
   showContainer.classList.remove("active");
   document.removeEventListener("keydown", handleKeyPress);
 }
+
+

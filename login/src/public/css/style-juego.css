@@ -93,8 +93,9 @@ ul li:nth-child(8) {
 
 .popup-container {
   position: absolute;
-  width: 100%;
+  width: 1000px;
   height: 100%;
+  font-size: 18px;
   opacity: 0;
   display: flex;
   justify-content: center;
