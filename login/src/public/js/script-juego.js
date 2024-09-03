@@ -23,7 +23,7 @@ const preguntas = [
   { pregunta: "¿Cuál es el metal más abundante en la corteza terrestre?", respuestas: ["Hierro", "Cobre", "Aluminio", "Plata"], correcta: 2 },
   { pregunta: "¿Qué tipo de animal es la ballena?", respuestas: ["Pez", "Anfibio", "Mamífero", "Reptil"], correcta: 2 }
 ];
-
+//aqui esta la ruleta 
 function spinWheel(evt) {
   let spin = Math.round(Math.random() * 2220);
   wheel.style.transition = "ease 3s";
